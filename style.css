@@ -44,7 +44,7 @@ body {
 
 #calculator .btns-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 60px);
     gap: 10px;
     margin-top: 20px;
 }
@@ -77,4 +77,10 @@ body {
     background-color: #e49e60;
     border-bottom: 4px solid #8c612a;
     border-right: 4px solid #8c612a;
+}
+
+#calculator .btns-grid button:active {
+    border-bottom: 2px solid #67604e;
+    border-right: 2px solid #67604e;
+    transform: scale(0.98); 
 }
