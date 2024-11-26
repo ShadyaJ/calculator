@@ -10,28 +10,28 @@
 <body>
     <div id="calculator">
         <div class="container">
-            <div class="input">0</div>
+            <div class="input" id="input">0</div>
 
             <div class="btns-grid">
-                <button type="button" class="btn-red">AC</button>
-                <button type="button" class="btn-red">C</button>
-                <button type="button">±</button>
-                <button type="button" class="btn-orange">&divide;</button>
-                <button type="button">7</button>
-                <button type="button">8</button>
-                <button type="button">9</button>
-                <button type="button" class="btn-orange">×</button>
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button" class="btn-orange">-</button>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button" class="btn-orange">+</button>
-                <button type="button">0</button>
-                <button type="button">.</button>
-                <button type="button" class="btn-grid-2">=</button>
+                <button type="button" class="btn-red" data-action="delete">&#11013;</button>    
+                <button type="button" class="btn-red" data-action="clear">C</button>
+                <button type="button" data-action="invert">±</button>
+                <button type="button" class="btn-orange" data-operator="/">&divide;</button>
+                <button type="button" data-number="7">7</button>
+                <button type="button" data-number="8">8</button>
+                <button type="button" data-number="9">9</button>
+                <button type="button" class="btn-orange" data-operator="*">×</button>
+                <button type="button" data-number="4">4</button>
+                <button type="button" data-number="5">5</button>
+                <button type="button" data-number="6">6</button>
+                <button type="button" class="btn-orange" data-operator="-">-</button>
+                <button type="button" data-number="1">1</button>
+                <button type="button" data-number="2">2</button>
+                <button type="button" data-number="3">3</button>
+                <button type="button" class="btn-orange" data-operator="+">+</button>
+                <button type="button" data-number="0">0</button>
+                <button type="button" data-number=".">.</button>
+                <button type="button" class="btn-grid-2" data-action="equal">=</button>
             </div>
         </div>
     </div>
